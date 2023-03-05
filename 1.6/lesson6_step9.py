@@ -16,7 +16,7 @@ try:
     # Заполнение обязательных полей
     first_name_input = browser.find_element(By.CSS_SELECTOR, 'input.form-control.first')
     first_name_input.send_keys('Alina')
-    second_name_input = browser.find_element(By.CSS_SELECTOR, '.first_block.second_class input')
+    second_name_input = browser.find_element(By.CSS_SELECTOR, '.first_block .second_class .second')
     second_name_input.send_keys('Zharkevich')
     email_input = browser.find_element(By.CSS_SELECTOR, )
     email_input.send_keys('alinasafina22@gmail.com')
