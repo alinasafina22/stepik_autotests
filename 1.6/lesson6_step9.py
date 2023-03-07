@@ -18,7 +18,7 @@ try:
     first_name_input.send_keys('Alina')
     second_name_input = browser.find_element(By.CSS_SELECTOR, '.first_block .second_class .second')
     second_name_input.send_keys('Zharkevich')
-    email_input = browser.find_element(By.CSS_SELECTOR, )
+    email_input = browser.find_element(By.CSS_SELECTOR, 'input.form-control.third')
     email_input.send_keys('alinasafina22@gmail.com')
     submit_button = browser.find_element(By.CSS_SELECTOR, 'button.btn')
     submit_button.click()
