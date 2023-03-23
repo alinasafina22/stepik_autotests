@@ -26,7 +26,7 @@ try:
     browser.get(link)
     # Получаем значение X
     x_element = browser.find_element(By.ID, 'treasure')
-    x = x_element.get_attribute('valuex')
+    x = x_element.get_attribute('valuex')  # получаем значение
     final_result = calc(x)  # Считаем значение Х в методе calc
     # Вводим полученное значение
     answer_inp = browser.find_element(By.CSS_SELECTOR, 'input#answer')
