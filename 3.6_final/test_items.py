@@ -8,14 +8,12 @@
 pytest --language=es test_items.py
 '''
 from selenium.webdriver.common.by import By
-from selenium.common.exceptions import NoSuchElementException
 from time import sleep
 
 
 def test_add_button_should_be_displayed(browser):
     link = 'http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/'
     browser.get(link)
-    sleep(5)
     add_button = browser.find_elements(By.CSS_SELECTOR, '.btn-add-to-basket')
     assert len(add_button) > 0, 'Элемент не отображается'
 
